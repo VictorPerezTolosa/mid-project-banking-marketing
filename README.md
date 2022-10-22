@@ -1,7 +1,10 @@
 # Ironhack Mid-term Project: Banking Marketing
 
+![logo_ironhack_blue 7](https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/84/original/logo-ironhack-blue.png)
+
 <h1>Project Maintenance & Contact Details</h1>
-The people contributed to this project are Lazarus Kon and Víctor Pérez Tolosa as part of our mid-term analysis project of our Ironhack bootcamp (Cohort: Data Analysis Part-time July 2022-January 2023). 
+
+The people contributed to this project are [Lazarus Kon](https://github.com/lazaruskon) and [Víctor Pérez Tolosa](https://github.com/VictorPerezTolosa) as part of our mid-term analysis project of our Ironhack bootcamp (Cohort: Data Analysis Part-time July 2022-January 2023). 
 
 <h1>What are you going to see on this project?</h1>
 
