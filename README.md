@@ -14,6 +14,8 @@ This repo includes a Jupyter Notebook document of our dataset. We also include l
 
 You can find the original dataset [here](https://www.kaggle.com/datasets/henriqueyamahata/bank-marketing?select=bank-additional-full.csv).
 
+Original Source: [Moro et al., 2014] S. Moro, P. Cortez and P. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. Decision Support Systems, Elsevier, 62:22-31, June 2014
+
 <h1>Description of Dataset</h1>
 
 The data is related to direct marketing campaigns (phone calls) of a Portuguese banking institution. The classification goal is to predict if the client will subscribe to a term deposit or not (variable y).
@@ -113,3 +115,16 @@ We used a variety of instruments, libraries and models to achieve the aforementi
   - 6.2. XGboost
 - 7. <b>Model Selection</b>
   - 7.1. Confidence Intervals
+
+<h1>Provisional Results & Conclusions</h1>
+
+Comparing all the above models, we can conclude that despite our efforts the highest recall score for 1 (Yes) is 0.62, with the overall values ranging from 0.43 to 0.62. Correspondingly, the highest recall score for 0 (No) is 0.94, with the overall values ranging from 0.88 to 0.94. Moreover, we observe high accuracy scores across the board, but quite low F1 scores (for Yes).
+
+Overall, the best performing combination of dataframes and scalers for 1 (Yes) is the standard scaler on the dataframe based on the feature importance, including all outliers. The same for 0 (No) is the polynomial features for the data frame that includes all features but no outliers.
+
+Finally, applying oversampling or undersampling techniques has not significantly improved our model's scores. A trend we observed is that SMOTE tends to slightly increase recall but dramatically decrease precision. The exact opposite is true when we apply TomeKLinks with reducing recall to increase precision.
+
+Based on all these observations we decided to use the Logistic Regression (Important Original Data / Scaler 1) as our reporting result. We're building confidence intervals for this model's recall scores next. Confidence Intervals: With 95% probability the true recall of 0 (No) is in between 0.882 and 0.897. For class 1 (Yes) the true recall is between 0.588 and 0.651 with a 95% probability. 
+
+For more details and a better understanding of these results and conclusions we invite you to check out our Notebook.
+
