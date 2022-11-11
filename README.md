@@ -59,7 +59,7 @@ Project goals included:
  1. finding ways of increasing the positive responses of clients in regards to a term deposit subscription.
  2. creating client profiles of people who, according to our data, are more likely to reply yes when a term deposit subscription is proposed to them.
 
-The project is useful since it allows us to analyze client behavior and attributes in the midst of the financial crisis of the previous decade that hit South European countries particularly hard.
+This project is valuable since it allows us to analyze client behavior and attributes in the midst of the financial crisis of the previous decade that hit South European countries particularly hard.
 
 <h1>Tools & Methods of Analysis</h1>
 
@@ -78,7 +78,19 @@ We used a variety of instruments, libraries and models to achieve the aforementi
   - Support Vector Machine
   - XGboost
 
-<h1>Table of Content of Jupyter Notebook</h1>
+<h1>Provisional Results & Conclusions</h1>
+
+Comparing all the above models, we concluded that despite our efforts the highest recall score for 1 (Yes) is 0.62, with the overall values ranging from 0.43 to 0.62. Correspondingly, the highest recall score for 0 (No) is 0.94, with the overall values ranging from 0.88 to 0.94. Moreover, we observed high accuracy scores across the board, but quite low F1 scores (for Yes).
+
+Overall, the best performing combination of dataframes and scalers for 1 (Yes) is the standard scaler on the dataframe based on the feature importance, including all outliers. The same for 0 (No) is the polynomial features for the data frame that includes all features but no outliers.
+
+Finally, applying oversampling or undersampling techniques has not significantly improved our models' scores. A trend we observed is that SMOTE tends to slightly increase recall but dramatically decrease precision. The exact opposite is true when we apply TomeKLinks with reducing recall to increase precision.
+
+Based on all these observations we decided to use the Logistic Regression (Important Original Data / Scaler 1) as our reporting result. We're building confidence intervals for this model's recall scores next. Confidence Intervals: With 95% probability the true recall of 0 (No) is in between 0.882 and 0.897. For class 1 (Yes) the true recall is between 0.588 and 0.651 with a 95% probability. 
+
+For more details and a better understanding of these results and conclusions we invite you to check out our Notebook.
+
+<h2>Table of Content of Jupyter Notebook</h2>
 
 - 1. <b>Attribute Information</b>
   - 1.1. Importing Dependencies & Loading the Data
@@ -115,16 +127,4 @@ We used a variety of instruments, libraries and models to achieve the aforementi
   - 6.2. XGboost
 - 7. <b>Model Selection</b>
   - 7.1. Confidence Intervals
-
-<h1>Provisional Results & Conclusions</h1>
-
-Comparing all the above models, we can conclude that despite our efforts the highest recall score for 1 (Yes) is 0.62, with the overall values ranging from 0.43 to 0.62. Correspondingly, the highest recall score for 0 (No) is 0.94, with the overall values ranging from 0.88 to 0.94. Moreover, we observe high accuracy scores across the board, but quite low F1 scores (for Yes).
-
-Overall, the best performing combination of dataframes and scalers for 1 (Yes) is the standard scaler on the dataframe based on the feature importance, including all outliers. The same for 0 (No) is the polynomial features for the data frame that includes all features but no outliers.
-
-Finally, applying oversampling or undersampling techniques has not significantly improved our model's scores. A trend we observed is that SMOTE tends to slightly increase recall but dramatically decrease precision. The exact opposite is true when we apply TomeKLinks with reducing recall to increase precision.
-
-Based on all these observations we decided to use the Logistic Regression (Important Original Data / Scaler 1) as our reporting result. We're building confidence intervals for this model's recall scores next. Confidence Intervals: With 95% probability the true recall of 0 (No) is in between 0.882 and 0.897. For class 1 (Yes) the true recall is between 0.588 and 0.651 with a 95% probability. 
-
-For more details and a better understanding of these results and conclusions we invite you to check out our Notebook.
 
