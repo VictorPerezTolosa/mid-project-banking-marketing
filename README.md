@@ -8,7 +8,7 @@ The people contributed to this project are [Lazarus Kon](https://github.com/laza
 
 <h1>What are you going to see on this project?</h1>
 
-This repo includes a Jupyter Notebook document of our dataset. We also include links to a presentation on [Canva](https://www.canva.com/design/DAFPvnvMdeM/vBkZCSaxzPQAJFkjJ8qddg/edit?utm_content=DAFPvnvMdeM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) and a [Tableau Dashboard](https://public.tableau.com/app/profile/victor.perez.tolosa/viz/LazVicIHMID-PROJECT/Mid-ProjectDashboard).
+This repo includes a Jupyter Notebook document of our dataset. We also include links to a presentation on [Canva](https://www.canva.com/design/DAFPvnvMdeM/gG8eTcwvse9GwndtzRktKQ/view?utm_content=DAFPvnvMdeM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) and a [Tableau Dashboard](https://public.tableau.com/app/profile/victor.perez.tolosa/viz/LazVicIHMID-PROJECT/Mid-ProjectDashboard).
 
 <h1>Data Source</h1>
 
